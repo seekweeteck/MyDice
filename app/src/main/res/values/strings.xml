@@ -1,3 +1,56 @@
 <resources>
-    <string name="app_name">MyDice</string>
+    <string name="app_name">Daily Dice</string>
+
+    <string-array name="area">
+        <item>Love</item>
+        <item>Friendship</item>
+        <item>Career</item>
+        <item>Wellness</item>
+        <item>Money</item>
+    </string-array>
+
+  <string-array name="love">
+        <item>1. There is a chill in the air.</item>
+        <item>2. Love is not in the stars.</item>
+        <item>3. Could be lust at first sight.</item>
+        <item>4. Romantic mindset improves.</item>
+        <item>5. This could be The One.</item>
+        <item>6. Can\'t get hotter.</item>
+    </string-array>
+
+    <string-array name="friendship">
+        <item>1. Beware of backstabbers.</item>
+        <item>2. Trust few today.</item>
+        <item>3. Things may be unclear</item>
+        <item>4. Spread your butterfly wings.</item>
+        <item>5. Everyone wants you.</item>
+        <item>6. Be a social butterfly today. </item>
+    </string-array>
+
+    <string-array name="career">
+        <item>1. You will get through the day.</item>
+        <item>2. Keep plugging away.</item>
+        <item>3. Work solo if possible.</item>
+        <item>4. Your productivity improves.</item>
+        <item>5. Expand your horizons.</item>
+        <item>6. Mega success possible.</item>
+    </string-array>
+
+    <string-array name="wellness">
+        <item>1. Don\'t push yourself today.</item>
+        <item>2. You need a nap.</item>
+        <item>3. Time to get more proactive.</item>
+        <item>4. You\'re OK.</item>
+        <item>5. Put your feet up.</item>
+        <item>6. You\'re in fine form</item>
+    </string-array>
+
+    <string-array name="money">
+        <item>1. Keep your wallet closed.</item>
+        <item>2. Pay what is owed.</item>
+        <item>3. Balance risk and reward.</item>
+        <item>4. Be a little generous.</item>
+        <item>5. Treat yourself.</item>
+        <item>6. Major moneymaking potential.</item>
+    </string-array>
 </resources>
