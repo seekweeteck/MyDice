@@ -13,13 +13,11 @@ class MainActivity : AppCompatActivity() {
     lateinit var imageViewDice : ImageView
     lateinit var dice : AnimationDrawable
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         imageViewDice = findViewById(R.id.imageViewDice)
-
 
         buttonStart.setOnClickListener {
             //Play dice rolling sound
@@ -58,27 +56,36 @@ class MainActivity : AppCompatActivity() {
             val area = spinnerArea.selectedItemPosition
             when(area){
                 0-> {
+                    //The first item has position 0
                     val result = resources.getStringArray(R.array.love)
-                    textViewResult.text = String.format("%s", result[random].toString())
+                    textViewResult.text = String.format("%d/%s", random, result[random-1].toString())
                 }
                 1->{
                     val result = resources.getStringArray(R.array.friendship)
-                    textViewResult.text = String.format("%s", result[random].toString())
+                    textViewResult.text = String.format("%d/%s", random, result[random-1].toString())
                 }
                 2->{
                     val result = resources.getStringArray(R.array.career)
-                    textViewResult.text = String.format("%s", result[random].toString())
+                    textViewResult.text = String.format("%d/%s", random, result[random-1].toString())
                 }
                 3->{
                     val result = resources.getStringArray(R.array.wellness)
-                    textViewResult.text = String.format("%s", result[random].toString())
+                    textViewResult.text = String.format("%d/%s", random, result[random-1].toString())
                 }
                 else->{
                     val result = resources.getStringArray(R.array.money)
-                    textViewResult.text = String.format("%s", result[random].toString())
+                    textViewResult.text = String.format("%d/%s", random, result[random-1].toString())
                 }
             }
         }
+    }
+
+    override fun onStart() {
+        //Play dice animation
+        imageViewDice.setBackgroundResource(R.drawable.question_animation)
+        dice = imageViewDice.background as AnimationDrawable
+        dice.start()
+        super.onStart()
     }
 
 }
